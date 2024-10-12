@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Your Best Friend</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 w-11/12 mx-auto">
+                <div class="navbar-start flex items-center">
+                    <img class="w-6 " src="images/logo.webp" alt="">
+                    <a class="btn btn-ghost text-2xl font-bold">Peddy</a>
+                </div>
+                <div class="navbar-center lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <img class="w-7" src="https://img.icons8.com/?size=80&id=50jQltuChBWa&format=png" alt="">
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="text-center p-4 ">
+                <h4 class="text-lg font-bold p-4 text-zinc-400">Bringing Families Together ❤️ </h4>
+                <h1 class="text-6xl font-bold">Your Path to Adoption <br>Starts Here</h1>
+                <p class="p-4 ">Adopting animals saves lives, giving them a loving home while, <br> reducing shelter
+                    overcrowding. It’s a rewarding experience.</p>
+                <button class="btn btn-success font-bold text-white">View More</button>
+            </div>
+        </section>
+        <main>
+            <div class="text-center">
+                <div>
+                    <img class="mx-auto" src="images/pet.webp" alt="">
+                </div>
+                <h1 class="font-bold text-4xl pt-4">Adopt Your Best Friend</h1>
+                <p class="text-zinc-400 p-4">Adopting animals saves lives, giving them a loving home while reducing
+                    shelter overcrowding. It’s a rewarding experience.</p>
+            </div>
+        </main>
+    </header>
+    <nav id="categories" class="flex justify-between w-11/12 mx-auto p-7"></nav>
+    <section id="Pets" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></section>
+
+    <!-- Open the modal  -->
+    <button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+    <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="modal-content"></div>
+            <div class="modal-action">
+                <button class="btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </dialog>
+
+    <footer class="footer bg-neutral text-neutral-content p-10 ">
+        <nav>
+            <div class="navbar-start flex items-center">
+                <img class="w-6 " src="images/logo.webp" alt="">
+                <a class="btn btn-ghost text-2xl font-bold">Peddy</a>
+            </div>
+
+            <a class="link link-hover text-zinc-400">Location: av. Washington 165, NY CA </a>
+            <a class="link link-hover text-zinc-400">54003</a>
+            <a class="link link-hover text-zinc-400">Phone: +31 85 964 47 25</a>
+            <a class="link link-hover text-zinc-400">Email: info@yourdomain.com</a>
+            <a class="link link-hover text-zinc-400">Openings hours: 9.00 AM - 5.00 PM</a>
+            <div class="flex gap-3">
+                <img src="https://img.icons8.com/?size=40&id=118496&format=png" alt="">
+                <img src="https://img.icons8.com/?size=40&id=41636&format=png" alt="">
+                <img src="https://img.icons8.com/?size=40&id=xjT0R1A4Hfs9&format=png" alt="">
+                <img src="https://img.icons8.com/?size=40&id=53889&format=png" alt="">
+            </div>
+
+        </nav>
+        <nav>
+            <h6 class=" text-white text-1xl font-bold ">Useful Links</h6>
+            <a class="link link-hover text-zinc-400">Home</a>
+            <a class="link link-hover text-zinc-400">About us</a>
+            <a class="link link-hover text-zinc-400">Animals</a>
+            <a class="link link-hover text-zinc-400">Foundation</a>
+            <a class="link link-hover text-zinc-400">Contact</a>
+        </nav>
+        <nav>
+            <h6 class="text-white text-1xl font-bold">Drop a Message</h6>
+            <label class="label">
+                <span class="text-zinc-400">Enter your email address</span>
+            </label>
+            <div class="join">
+                <input type="text" placeholder="username@site.com" class="input input-bordered  join-item" />
+
+            </div>
+            <button class="btn btn-success text-white w-full">Success</button>
+        </nav>
+    </footer>
+
+    <script src="./js/Adopt.js"></script>
+
+</body>
+
+</html>
